@@ -10,8 +10,8 @@ Add `require('cypress-template-fixtures')(on, config);` in the `cypress/plugins/
 
 ```js
 module.exports = (on, config) => {
-  require('cypress-template-fixtures')(on, config); // Add this line
-  return config;
+    require('cypress-template-fixtures')(on, config); // Add this line
+    return config;
 };
 ```
 
@@ -30,6 +30,16 @@ Please refer to the [doc here](https://docs.cypress.io/guides/guides/environment
 2. From `cypress.env.json`, don't have to use `CYPRESS_` or `cypress_` prefixes.
 3. From command line or system environment variables, **have to** use `CYPRESS_` or `cypress_` prefixes.
 4. Using [cypress-dotenv](https://github.com/morficus/cypress-dotenv), **have to** use `CYPRESS_` or `cypress_` prefixes unless [set the `all` parameter to true](https://github.com/morficus/cypress-dotenv#options).
+
+Note, if you use cypress-dotenv make sure enable it before cypress-template-fixtures.
+
+```js
+module.exports = (on, config) => {
+    config = require('cypress-dotenv')(config)
+    require('cypress-template-fixtures')(on, config); // Add this line
+    return config
+};
+```
 
 ## How it works
 
