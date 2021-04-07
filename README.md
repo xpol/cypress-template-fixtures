@@ -35,8 +35,8 @@ Note, if you use cypress-dotenv make sure enable it before cypress-template-fixt
 
 ```js
 module.exports = (on, config) => {
-    config = require('cypress-dotenv')(config)
-    require('cypress-template-fixtures')(on, config); // Add this line
+    config = require('cypress-dotenv')(config); // load .env before cypress-template-fixtures
+    require('cypress-template-fixtures')(on, config);
     return config
 };
 ```
