@@ -1,13 +1,15 @@
 {
   "name": "cypress-template-fixtures",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allow use {{ENVIRONMENT_VARIABLE}} in Cypress fixture files.",
   "engines": {
     "node": ">=12 <15"
   },
   "main": "index.js",
   "jest": {
-    "testPathIgnorePatterns": ["cypress/"]
+    "testPathIgnorePatterns": [
+      "cypress/"
+    ]
   },
   "scripts": {
     "test": "jest",
