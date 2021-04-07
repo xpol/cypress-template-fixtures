@@ -1,0 +1,6 @@
+/.idea
+/.npmrc
+/cypress/fixtures.out/
+/cypress/screenshots/
+/cypress/videos/
+/node_modules/

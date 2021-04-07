@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://example.cypress.io",
+  "env": {
+    "NAME": "Name from cypress.json env field"
+  }
+}
