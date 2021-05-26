@@ -1,7 +1,7 @@
 {
   "name": "cypress-template-fixtures",
   "version": "1.0.2",
-  "description": "Allow use {{ENVIRONMENT_VARIABLE}} in Cypress fixture files.",
+  "description": "Allow using {{ENVIRONMENT_VARIABLE}} in Cypress fixture files.",
   "engines": {
     "node": ">=12 <15"
   },

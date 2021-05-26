@@ -1,6 +1,6 @@
 # Cypress Template Fixtures
 
-Allow use `{{ENVIRONMENT_VARIABLE}}` in Cypress fixture files.
+Allow using `{{ENVIRONMENT_VARIABLE}}` in Cypress fixture files.
 
 ## Setup
 

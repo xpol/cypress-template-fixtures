@@ -2,10 +2,17 @@ const path = require('path');
 const fs = require('fs');
 
 const ensureDirSync = (dir) => {
-    if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir);
+    if (fs.existsSync(dir)) {
+        return;
     }
-};
+    const parent = path.dirname(dir);
+
+    if (!fs.existsSync(parent)) {
+        ensureDirSync(parent);
+    }
+
+    fs.mkdirSync(dir);
+}
 
 const recursiveScanDirSync = (dir) => {
     const results = [];
