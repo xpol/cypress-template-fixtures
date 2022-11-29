@@ -47,6 +47,7 @@ const buildFixtures = (inputDir, variables, outputDir) => {
         '.html': true,
         '.txt': true,
         '.csv': true,
+        '.yml': true,
     };
 
     ensureDirSync(outputDir);
