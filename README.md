@@ -44,7 +44,7 @@ module.exports = (on, config) => {
 ## How it works
 
 1. When running `cypress run` or `cypress open` this plugin will copy all fixtures in `cypress/fixtures` into `cypress/fixtures.out` with sub-folders structure preserved.
-2. When copying text fixtures (`.json`, `.js`, `.coffee`, `.html`, `.txt`, `.csv`) the variables like `{{MY_VARIABLE}}` will be replaced with the related environment variable value like `MY_VARIABLE`.
+2. When copying text fixtures (`.json`, `.js`, `.coffee`, `.html`, `.txt`, `.csv`, `.yml`) the variables like `{{MY_VARIABLE}}` will be replaced with the related environment variable value like `MY_VARIABLE`.
 3. This plugin will also change the `fixturesFolder` config to `cypress/fixtures.out` so that cypress will use the fixtures there.
 
 ## Limitations
